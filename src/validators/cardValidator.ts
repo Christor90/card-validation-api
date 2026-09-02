@@ -91,7 +91,6 @@ export class CardValidator {
   private static createError(status: number, message: string): ValidationError {
     const error = new Error(message) as ValidationError;
     error.status = status;
-    error.message = message;
     return error;
   }
 

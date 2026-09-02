@@ -3,6 +3,11 @@ export interface CardValidationRequest {
   cardNumber: string;
 }
 
+export interface ValidationResult {
+  isValid: boolean;
+  cardType: string;
+}
+
 export interface CardValidationResponse {
   isValid: boolean;
   cardNumber: string;
@@ -10,7 +15,6 @@ export interface CardValidationResponse {
   message: string;
 }
 
-export interface ValidationError {
+export interface ValidationError extends Error {
   status: number;
-  message: string;
 }

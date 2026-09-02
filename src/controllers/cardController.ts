@@ -1,6 +1,4 @@
 
-
-
 import { Request, Response } from 'express';
 import { CardValidator } from '../validators/cardValidator';
 import { CardValidationRequest, CardValidationResponse } from '../types/index';
