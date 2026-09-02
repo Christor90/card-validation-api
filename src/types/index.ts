@@ -1,14 +1,8 @@
 
-/**
- * Request body for card validation endpoint
- */
 export interface CardValidationRequest {
   cardNumber: string;
 }
 
-/**
- * Successful validation response
- */
 export interface CardValidationResponse {
   isValid: boolean;
   cardNumber: string;
@@ -16,27 +10,7 @@ export interface CardValidationResponse {
   message: string;
 }
 
-/**
- * Error response
- */
-export interface ErrorResponse {
-  isValid: false;
-  cardNumber: string;
-  message: string;
-}
-
-/**
- * Generic error object for internal use
- */
-export interface ValidationError extends Error {
+export interface ValidationError {
   status: number;
   message: string;
-}
-
-/**
- * Validation result from validator
- */
-export interface ValidationResult {
-  isValid: boolean;
-  cardType: string;
 }
