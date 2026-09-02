@@ -8,7 +8,7 @@ describe('Luhn Algorithm', () => {
     });
     
     it('should validate a correct Mastercard number', () => {
-      expect(luhnCheck('5425233010103442')).toBe(true);
+      expect(luhnCheck('5555555555554444')).toBe(true);
     });
     
     it('should validate a correct Amex number', () => {
